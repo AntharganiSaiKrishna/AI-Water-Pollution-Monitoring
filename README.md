@@ -1,53 +1,78 @@
-🌍 AI-Powered Water Pollution Monitoring
-AICTE Green AI Internship – Environmental Monitoring \& Pollution Control
+🌊💧 AI-Powered Water Pollution Monitoring
 
-Project Overview:
+AICTE Green AI Internship – Environmental Monitoring & Pollution Control
 
-This project focuses on analyzing water pollution data using AI \& data science techniques.
+🌟 Project Overview
 
-The goal is to understand key water quality parameters (like pH, dissolved oxygen, hardness, chloramines, etc.) and prepare the data for building AI models that can assist in predicting pollution levels and supporting smarter environmental monitoring.
+This project leverages Artificial Intelligence and Data Science to analyze water pollution data.
+The main goal is to understand key water quality parameters (like pH, Dissolved Oxygen, BOD, Turbidity, heavy metals) and build AI models that can predict pollution levels and support smarter environmental monitoring.
 
+📅 Week 1 – Data Understanding & Exploration
 
-Dataset:
+Imported Libraries: Pandas, NumPy, Matplotlib, Seaborn
+
+Dataset Loaded: Water_Quality_Dataset.csv
+
+Exploration Steps:
+
+.info() – structure & datatypes
+
+.describe() – statistical summary
+
+.isnull().sum() – check missing values
+
+🔍 Insights:
+
+Missing values detected and analyzed.
+
+Observed ranges of features like pH, Turbidity, Temperature, BOD, DO, Heavy Metals.
+
+Dataset prepared for AI/ML model training.
+
+🧹 Week 2 – Data Preprocessing & Model Training
+
+Missing Values Handled for numeric & categorical features
+
+Categorical Encoding: Location
+
+Feature Scaling: StandardScaler for numeric features
+
+Train-Test Split: 80% training, 20% testing
+
+Models Trained:
+
+Logistic Regression
+
+Decision Tree
+
+Random Forest
+
+Evaluation Metrics: Accuracy, Precision, Recall, F1-score, Confusion Matrix
+
+Feature Importance: Visualized top contributors using Random Forest
+
+Cleaned Dataset Saved: Week2_Cleaned_Dataset.csv
+
+💡 Key Result:
+
+Random Forest Accuracy: ~99% ✅
+
+Top Features: BOD, DO, pH, Turbidity, Heavy Metals
+
+🛠️ Tech Stack
+
+Language: Python
+
+Libraries: Pandas, NumPy, Matplotlib, Seaborn, scikit-learn
+
+Platform: Jupyter Notebook, GitHub
+
+📁 Dataset
 
 Source: Kaggle – Water Quality Dataset
-File Used: Water\_Quality\_Dataset.csv
-The dataset contains values of water quality indicators and labels whether the water is potable (safe to drink) or not.
 
-Steps Completed (Week 1):
+File Used: Water_Quality_Dataset.csv
 
-Imported required Python libraries (Pandas, NumPy, Matplotlib, Seaborn).
-Loaded dataset into Jupyter Notebook.
+Contains water quality measurements and labels (Safe, Moderate, Polluted)
 
-Explored dataset using:
-
-.info() – structure \& datatypes
-.describe() – statistical summary
-.isnull().sum() – missing values check
-
-
-Example Insights:
-
-
-Detect missing values in water quality measurements.
-Understand ranges of features like pH, hardness, chloramines, and solids.
-Prepare data for AI/ML model training in upcoming weeks.
-
-
-Tech Stack:
-
-Language: Python 
-Tools: Jupyter Notebook, Pandas, NumPy, Matplotlib, Seaborn
-Platform: GitHub
-
-
-Future Work:
-
-Handle missing values.
-Feature engineering for pollution classification.
-Train AI models (Logistic Regression, Random Forest, Neural Networks).
-Build a real-time dashboard for pollution monitoring.
-
-
-✨ This project is a part of the AICTE Green AI Internship (Environmental Monitoring \& Pollution Control domain).
-
+✨ This project is part of the AICTE Green AI Internship in the Environmental Monitoring & Pollution Control domain.
